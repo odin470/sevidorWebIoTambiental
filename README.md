@@ -13,4 +13,4 @@ En chile compro todo en un ecommerce llamado Altronic los cuales envian a todo c
 
 ## Primero hablaremos del alojamiento de la aplicacion PHP y Base de Datos MySQL
 
-![Diagrama del proyecto](https://raw.githubusercontent.com/odin470/sevidorWebIoTambiental/main/ESP32%20%2B%20Sensor%20DHT11.png "Optional title")
+![Diagrama del proyecto](https://raw.githubusercontent.com/odin470/sevidorWebIoTambiental/main/ESP32DHT11.png "Diagrama del proyecto")
