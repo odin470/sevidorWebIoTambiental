@@ -11,6 +11,6 @@ Para este proyecto utilizaremos:
 
 En chile compro todo en un ecommerce llamado Altronic los cuales envian a todo chile de forma muy rapida y el hardware es muy barato.
 
-##Primero hablaremos del alojamiento de la aplicacion PHP y Base de Datos MySQL
+## Primero hablaremos del alojamiento de la aplicacion PHP y Base de Datos MySQL
 
 ![Diagrama del proyecto](https://raw.githubusercontent.com/odin470/sevidorWebIoTambiental/main/ESP32%20%2B%20Sensor%20DHT11.png "Optional title")
