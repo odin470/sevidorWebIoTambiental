@@ -12,3 +12,6 @@ Para este proyecto utilizaremos:
 En chile compro todo en un ecommerce llamado Altronic los cuales envian a todo chile de forma muy rapida y el hardware es muy barato.
 
 Primero hablaremos del alojamiento de la 
+
+![Diagrama del proyecto]
+(https://github.com/odin470/sevidorWebIoTambiental/blob/main/ESP32%20%2B%20Sensor%20DHT11.png)
