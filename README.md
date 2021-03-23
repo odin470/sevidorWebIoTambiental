@@ -40,3 +40,4 @@ No profundizare en la creación de tablas de datos pero le dejare una consulta p
 
 ## Tercero crearemos el ScriptPHP HTTP POST: insertar datos en la base de datos MySQL
 
+Ahora hablaremos del ScriptPHP el cual escuchas las consultas entrantes desde la placa ESP32 y luego inserta los datos en nuestra base de datos MySQL, el archivo llamado publica-datos.php ubicado en la carpeta servidor de este proyecto lo debes copiar en la raíz de tu hosting asociado a este proyecto.
