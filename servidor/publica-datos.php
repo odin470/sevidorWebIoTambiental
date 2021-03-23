@@ -30,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $v1Temperatura = test_input($_POST["v1Temperatura"]);
         $v2Humedad = test_input($_POST["v2Humedad"]);
                 
-        // Create connection
+        // Crear conneccion
         $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
+        // revisar conneccion
         if ($conn->connect_error) {
             die("La conexión falló: " . $conn->connect_error);
         } 
