@@ -38,5 +38,5 @@ No profundizare en la creación de tablas de datos pero le dejare una consulta p
 >    fecha_lectura TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP    
 >) 
 
-
+## Tercero crearemos el ScriptPHP HTTP POST: insertar datos en la base de datos MySQL
 
