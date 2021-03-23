@@ -47,3 +47,5 @@ https://github.com/odin470/sevidorWebIoTambiental/blob/main/servidor/publica-dat
 ## Cuarto ScriptPHP: muestra el contenido de la base de datos
 
 Crearemos otro archivo PHP en el directorio raiz que mostrará todo el contenido de la base de datos en una página web. Nombra tu nuevo archivo: ver-data.php ubicado en la carpeta servidor de este proyecto lo debes copiar en la raíz de tu hosting asociado a este proyecto.
+
+https://github.com/odin470/sevidorWebIoTambiental/blob/main/servidor/ver-datos.php
