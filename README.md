@@ -13,4 +13,8 @@ En chile compro todo en un ecommerce llamado Altronic los cuales envian a todo c
 
 ## Primero hablaremos del alojamiento de la aplicacion PHP y Base de Datos MySQL
 
+Lo ideal es tener un hosting con su propio nombre de dominio como ejemplo https://cv.ocorpchile.com y espacio para almacenar las lecturas del sensor DHT11 del ESP32, la idea es que puedas visualizar los datos desde cualquier parte del mundo y dispositivo accediendo al tu dominio (ejemplo: https://cv.ocorpchile.com). 
+
+
+
 ![Diagrama del proyecto](https://raw.githubusercontent.com/odin470/sevidorWebIoTambiental/main/ESP32DHT11.png "Diagrama del proyecto")
