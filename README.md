@@ -25,3 +25,8 @@ Te recomiendo usar un hosting como www.Bluehosting.cl el cual es muy económico 
 
 En nuestro hosting con cpanel buscaremos el asistente para crear base de datos MySQL donde crearemos una base de datos y un usuario con todos los permisos a la base de datos, luego anotaremos el nombre de la base de datos con su prefijo, el usuario asociado a la base de datos y su clave ya que la utilizaremos más adelante.
 
+### Crear tabla en nuestra base de datos
+
+No profundizare en la creación de tablas de datos pero le dejare una consulta para que creen su tabla de una manera rápida 
+
+
