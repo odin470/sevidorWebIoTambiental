@@ -36,7 +36,7 @@ No profundizare en la creación de tablas de datos pero le dejare una consulta p
 >    v1Temperatura VARCHAR(10),    
 >    v2Humedad VARCHAR(10),    
 >    fecha_lectura TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP    
->)
+>) 
 
 
 
