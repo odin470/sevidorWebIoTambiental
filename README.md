@@ -21,6 +21,7 @@ Acá tienes un diagrama de lo que lograremos con estas líneas de código:
 
 Te recomiendo usar un hosting como www.Bluehosting.cl el cual es muy económico y te recomiendo el plan full el cual regala un dominio gratis por un año, además tiene CPanel lo que hace las cosas más fáciles.
 
-Segundo prepararemos nuestra base de datos MySQL:
+## Segundo prepararemos nuestra base de datos MySQL:
+
 En nuestro hosting con cpanel buscaremos el asistente para crear base de datos MySQL donde crearemos una base de datos y un usuario con todos los permisos a la base de datos, luego anotaremos el nombre de la base de datos con su prefijo, el usuario asociado a la base de datos y su clave ya que la utilizaremos más adelante.
 
