@@ -1,0 +1,95 @@
+//librerias que vamos a utilizar en nuestro proyecto
+#include "DHT.h"
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <WiFiClient.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+
+// Reemplace con sus credenciales de red
+const char* ssid     = "nombre_de_red_wifi";
+const char* password = "clave_red_wifi";
+// REEMPLACE con su nombre de dominio y ruta URL o dirección IP con ruta
+const char* serverName = "http://mihosting.com/publica-datos.php";
+String apiKeyValue = "87R60fHf92aJa8TO2X";
+String sensorName = "DHT11";
+String sensorLocation = "OcorpChile";
+
+//puerto donde conectara la señal del sensor
+#define DHTPIN 2
+
+// tipo de sensor que estamos utilizando
+#define DHTTYPE DHT11
+
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  //comunicacion con consola
+  Serial.begin(115200);
+  
+  //conexion a red wifi 
+  WiFi.begin(ssid, password);
+  Serial.println("Connecting");
+  while(WiFi.status() != WL_CONNECTED) { 
+    delay(500);
+    Serial.print(".");
+  }
+  
+  //muestra en consola el estado de la conexion y la direccion ip asignada a dispositivo
+  Serial.println("");
+  Serial.print("Connected to WiFi network with IP Address: ");
+  Serial.println(WiFi.localIP());
+
+  dht.begin();
+}
+
+void loop() {
+  //toma la lectura del sensor DHT11 cada 2 segundos
+  delay(2000);
+  //toma la lectura de humedad del sensor y lo guarda en h
+  float h = dht.readHumidity();
+  //toma la lectura de temperatura del sensor y lo guarda en t
+  float t = dht.readTemperature();
+  //toma la lectura de t en faren del sensor y lo guarda en f 
+  float f = dht.readTemperature(true);
+  //se comprueba si entrego lectura el sensor
+  if (isnan(h) || isnan(t) || isnan(f)){
+    Serial.println(F("error a leer sensor DHT11"));
+    return;    
+  }
+  //se comprueba la conexion a internes
+  if(WiFi.status()== WL_CONNECTED){
+    HTTPClient http;
+    
+    //se realiza la comunicacion con el codigo que habias realizado para enviar las lecturas a la base de datos
+    http.begin(serverName);
+    //tipos de datos que se envia
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    // Prepara los datos de su solicitud HTTP POST
+    String httpRequestData = "api_key=" + apiKeyValue + "&sensor=" + sensorName
+                          + "&ubicacion=" + sensorLocation + "&v1Temperatura=" + t
+                          + "&v2Humedad=" + h +  "";
+    Serial.print("httpRequestData: ");
+    Serial.println(httpRequestData);
+    
+    int httpResponseCode = http.POST(httpRequestData);
+       
+    if (httpResponseCode>0) {
+      Serial.print("HTTP Response code: ");
+      Serial.println(httpResponseCode);
+    }
+    else {
+      Serial.print("Error code: ");
+      Serial.println(httpResponseCode);
+    }
+    // Free resources
+    http.end();
+  }
+  else {
+    Serial.println("WiFi Disconnected");
+  }
+  //Send an HTTP POST request every 30 seconds
+  delay(30000);
+}
