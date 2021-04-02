@@ -1,5 +1,6 @@
 # SevidorWeb-IoT-Ambiental
 Les envío un gran abrazo a todos desde mi cuarentena en La Serena, Chile #SerenaconValley Hoy para no perder la costumbre les compartiré un mini proyecto sencillo donde tomas datos desde un sensor ambiental DHT11 (temperatura y humedad) y crearemos un cliente en una ESP32 para insertar estos datos en una base de datos MySQL en tu hosting. También tendrá una página web donde podrás ver los datos entregados por el sensor desde cualquier parte del mundo.  Un gran abrazo para todos y atento el costo del proyecto en hardware no supera los 20 mil pesos Chilenos.  Saludos que tenga una buena semana y espero se entretengan en cuarentena con estos proyectos sencillos, rápidos y baratos de hacer para darle IoT a tu vida.  Recuerda que busco donde desarrollar tecnología para ti o tus clientes:  https://cv.ocorpchile.com
+## Gracias a KAUEL por apoyarnos con el hardware para estos proyectos www.kauel.com 
 
 Para este proyecto utilizaremos:
 
